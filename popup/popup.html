@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Wiki Tools</title>
+    <link rel="stylesheet" href="bulma.min.css" />
+</head>
+<body>
+    
+    <div class="container m-3">
+        <h1 class="title">Minecraft Wiki Tools</h1>
+
+        <div class="field">
+            <label class="label">Status</label>
+            <span class="tag is-success" id="runningSpan">Running</span>
+            <span class="tag is-danger" id="stoppedSpan">Stopped</span>
+        </div>
+        
+    </div>
+
+    <div class="container m-3">
+        <div class="field">
+            <div class="label">Location ID</div>
+            <div class="select">
+                <select id="locationId">
+                </select>
+            </div>
+
+            <p id="locationIdError" class="help is-danger" style="display: none">Please select a valid location.</p>
+        </div>
+
+        <div class="field">
+            <label class="label">Start Date</label>
+            <div class="control">
+                <input type="date" class="input" id="startDate">
+            </div>
+            <p id="startDateError" class="help is-danger" style="display: none">Please enter a valid start date.</p>
+        </div>
+
+        <div class="field">
+            <label class="label">End Date</label>
+            <div class="control">
+                <input type="date" class="input" id="endDate">
+            </div>
+            <p id="endDateError" class="help is-danger" style="display: none">Please enter a valid end date.</p>
+        </div>
+        
+    </div>
+
+    <div class="container m-3">
+        <button class="button is-success is-fullwidth" id="startButton">Save & Start</button>
+    </div>
+
+    <div class="container m-3">
+        <button class="button is-danger is-fullwidth" id="stopButton">Stop</button>
+    </div>
+
+</body>
+<script src="popup.js"></script>
+</html>

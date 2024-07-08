@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Test Extension",
+    "version": "0.0.1",
+    "description": "A basic example extension with only required keys",
+    "author": "Gavin Tryzbiak",
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "actions": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "64": "images/icon-64.png",
+        "128": "images/icon-128.png"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions": [
+        "storage",
+        "alarms",
+        "notifications"
+    ]
+  }
+  
